@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Mi primer módulo',
+    'name': 'Mi módulo de ejemplo',
     'summary': """Ejemplo de un módulo para Odoo""",
     'description': """
         Ejemplo de un módulo para Odoo en Phyton que permitirá:
