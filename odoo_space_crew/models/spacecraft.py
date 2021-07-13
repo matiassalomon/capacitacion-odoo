@@ -3,6 +3,7 @@
 from odoo import models, fields, api
 
     _name = "spacecrew.spacecraft"
+    
     _description = "Datos de una nave espacial."
     
     tipo = fields.Selection(string="Tipo de nave espacial",
@@ -23,6 +24,7 @@ from odoo import models, fields, api
                                        ('nuclear', 'Combustible nuclear')
                                    ]
                                   )
+    
     foto = fields.Image(string="Imagen", help="Imagen de la nave espacial.")
     
     capacidad = fields.Integer(string="Capacidad de pasajeros", required=True)
