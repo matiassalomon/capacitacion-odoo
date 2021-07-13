@@ -2,7 +2,7 @@
 
 from odoo import models, fields, api
 
-    _name = "Nave espacial"
+    _name = "spacecrew.spacecraft"
     _description = "Datos de una nave espacial."
     
     tipo = fields.Selection(string="Tipo de nave espacial",
