@@ -2,6 +2,8 @@
 
 from odoo import models, fields, api
 
+class Spacecraft(models.Model):
+    
     _name = "spacecrew.spacecraft"
     
     _description = "Datos de una nave espacial."
