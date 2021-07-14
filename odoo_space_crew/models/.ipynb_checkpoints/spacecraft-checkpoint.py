@@ -8,6 +8,8 @@ class Spacecraft(models.Model):
     
     _description = "Datos de una nave espacial."
     
+    nombre = fields.Char(string="nombre", help="Nombre de la nave espacial")
+    
     tipo = fields.Selection(string="Tipo de nave espacial",
                                    selection=[
                                        ('tourist', 'Nave espacial turística'),
@@ -27,7 +29,7 @@ class Spacecraft(models.Model):
                                    ]
                                   )
     
-    foto = fields.Image(string="Imagen", help="Imagen de la nave espacial.")
+    foto = fields.Image(string="Imagen", help="Imagen de la nave espacial.", required=False)
     
     capacidad = fields.Integer(string="Capacidad de pasajeros", required=True)
     

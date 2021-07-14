@@ -15,6 +15,6 @@
         
     ],
     'demo': [
-        
+        'demo/spacecraft.xml',
     ]
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record model="spacecrew.spacecraft" id="vostok_1">
+            <field name="nombre">Vostok 1</field>
+            <field name="tipo">moon</field>
+            <field name="combustible">bencina-95</field>
+            <field name="capacidad">8</field>
+            <field name="peso">75800</field>
+            <field name="alto">84.3</field>
+        </record>
+        <record model="spacecrew.spacecraft" id="apolo_11">
+            <field name="nombre">Apolo 11</field>
+            <field name="tipo">moon</field>
+            <field name="combustible">bencina-98</field>
+            <field name="capacidad">6</field>
+            <field name="peso">70000</field>
+            <field name="alto">55.5</field>
+        </record>
+        <record model="spacecrew.spacecraft" id="voyager_1">
+            <field name="nombre">Voyager 1</field>
+            <field name="tipo">tourist</field>
+            <field name="combustible">kerosene</field>
+            <field name="capacidad">20</field>
+            <field name="peso">120000</field>
+            <field name="alto">128.0</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record model="academy.course" id="erp_101">
+            <field name="name">ERP 101</field>
+            <field name="description">Introducción a un ERP</field>
+            <field name="level">begginer</field>
+        </record>
+        <record model="academy.course" id="accounting_200">
+            <field name="name">Contabilidad 200</field>
+            <field name="description">
+                Curso de contabilidad de nivel medio.
+                Como es un campo text (en realidad no) le voy a poner varias líneas para demostrar que se puede.
+                No sé cómo va a hacer el corte de las líneas.
+            </field>
+            <field name="level">intermediate</field>
+        </record>
+        <record model="academy.course" id="website_500">
+            <field name="name">Creación de sitios web 500</field>
+            <field name="description">
+                Creación de páginas web.
+            </field>
+            <field name="level">advance</field>
+        </record>
+        <record model="academy.course" id="website_501">
+            <field name="name">Creación de sitios web 501</field>
+            <field name="level">advance</field>
+        </record>
+    </data>
+</odoo>

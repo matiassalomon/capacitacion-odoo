@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="course_view_form">
+            <field name="name">academy.course.form</field>
+            <field name="model">academy.course</field>
+            <field name="arch" type="xml">
+                <form string="Formulario del curso">
+                    <sheet>
+                        <h1><field name="name"></field></h1>
+                        <group>
+                            <group>
+                                <field name="active"></field>
+                            </group>
+                            <group>
+                                <field name="level"></field>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Descripción">
+                                <field name="description"></field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="course_view_list">
+            <field name="name">academy.course.list</field>
+            <field name="model">academy.course</field>
+            <field name="arch" type="xml">
+                <tree string="Listado de cursos">
+                    <field name="active"></field>
+                    <field name="name"></field>
+                    <field name="description"></field>
+                    <field name="level"></field>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="course_view_search">
+            <field name="name">academy.course.search</field>
+            <field name="model">academy.course</field>
+            <field name="arch" type="xml">
+                <search string="Búsqueda de cursos">
+                    <field name="name"></field>
+                    <field name="description"></field>
+                </search>
+            </field>
+        </record>
+        
+    </data>
+</odoo>
