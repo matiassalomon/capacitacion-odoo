@@ -8,7 +8,7 @@ class Spacecraft(models.Model):
     
     _description = "Datos de una nave espacial."
     
-    nombre = fields.Char(string="nombre", help="Nombre de la nave espacial")
+    nombre = fields.Char(string="Nombre", help="Nombre de la nave espacial")
     
     tipo = fields.Selection(string="Tipo de nave espacial",
                                    selection=[
@@ -39,4 +39,4 @@ class Spacecraft(models.Model):
     
     active = fields.Boolean(string="Activo", default=True)
     
-    
+    detalle = fields.Text(string="Detalles", help="Detalles extras de la nave espacial.")

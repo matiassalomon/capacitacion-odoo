@@ -1,0 +1,3 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+spacecrew_admin,Administrador de Naves Espaciales,model_spacecrew_spacecraft,group_spacecrew_admin,1,1,1,1
+spacecrew_user,Usuario de Naves Espaciales,model_spacecrew_spacecraft,,1,0,0,0

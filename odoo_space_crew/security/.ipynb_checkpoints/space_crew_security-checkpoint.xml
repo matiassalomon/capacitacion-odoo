@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="group_spacecrew_admin" model="res.groups">
+        <field name="name">Administradores de Naves Espaciales</field>
+    </record>
+    
+    <record id="only_active_modify" model="ir.rule"> <!-- Esta es una regla que altera los permisos -->
+        <field name="name">Solo modificar las naves activas</field>
+        <field name="perm_read" eval="0" />
+        <field name="perm_write" eval="1" /> <!-- Con esto le digo que si cae acá, puede escribir (cómo le digo que si no cae acá no puede? no lo sé) -->
+        <field name="perm_create" eval="0" />
+        <field name="perm_unlink" eval="1" />
+        <field name="domain_force">[('active','=',True)]</field> <!-- Esto es como un filtro, solo paralos dominios activos -->
+        <field name="model_id" ref="model_spacecrew_spacecraft" /> <!-- Con esto le digo a qué modelo aplica mi regla -->
+    </record>
+</odoo>

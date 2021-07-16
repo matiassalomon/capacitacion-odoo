@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="management_view_form">
+            <field name="name">spacecrew.spacecraft.form</field>
+            <field name="model">spacecrew.spacecraft</field>
+            <field name="arch" type="xml">
+                <form string="Naves Espaciales">
+                    <sheet>
+                        <h1><field name="nombre" placeholder="Nombre de la nave espacial"></field></h1>
+                        <field name='foto' widget="image" class="oe_avatar" />
+                        <group>
+                            <group>
+                                <field name="tipo"></field>
+                                <field name="combustible"></field>
+                            </group>
+                            <group>
+                                <field name="capacidad"></field>
+                                <field name="peso"></field>
+                                <field name="alto"></field>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="detalle"></field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sac_management_list">
+            <field name="name">spacecrew.spacecraft.list</field>
+            <field name="model">spacecrew.spacecraft</field>
+            <field name="arch" type="xml">
+                <tree string="Listado de Naves Espaciales">
+                    <field name="foto" nolabel="1" widget="image" class="o_field_image o_field_widget oe_avatar"></field>
+                    <field name="nombre"></field>
+                    <field name="tipo"></field>
+                    <field name="combustible"></field>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sac_management_search">
+            <field name="name">spacecrew.spacecraft.search</field>
+            <field name="model">spacecrew.spacecraft</field>
+            <field name="arch" type="xml">
+                <search string="Búsqueda de naves">
+                    <field name="nombre"></field>
+                    <field name="tipo"></field>
+                    <field name="combustible"></field>
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

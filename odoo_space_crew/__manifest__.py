@@ -12,7 +12,11 @@
     'version': '0.1',
     'depends': ['base'],
     'data': [
-        
+        'security/space_crew_security.xml',
+        'security/ir.model.access.csv',
+        'views/space_crew_menuitems.xml',
+        'views/spacecrew_views.xml',
+        'views/css_loader.xml',
     ],
     'demo': [
         'demo/spacecraft.xml',
