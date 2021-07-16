@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="management_list_action">
+            <field name="name">Gestión de Llamadas, E-Mails y Chats</field>
+            <field name="res_model">sac.management</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    No hay contenido aquí hasta que no cree su primer gestión de contacto.
+                </p>
+            </field>
+        </record>
+        <menuitem name="Gestión de Llamadas, E-Mails y Chats"
+                  id="menu_management"
+                  sequence="1" />
+        <menuitem name="Gestiones"
+                  id="menu_management_sub"
+                  parent="menu_management"
+                  sequence="2" />
+        <menuitem name="Llamadas, E-Mails y Chats"
+                  id="menu_management_list"
+                  parent="menu_management_sub"
+                  sequence="3" 
+                  action="management_list_action" />
+    </data>
+</odoo>

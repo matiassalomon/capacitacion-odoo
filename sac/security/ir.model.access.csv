@@ -1,0 +1,3 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+management_admin,Administrador de Contactos a SAC,model_sac_management,group_management_admin,1,1,1,1
+management_user,Usuario de Contactos a SAC,model_sac_management,,1,0,0,0

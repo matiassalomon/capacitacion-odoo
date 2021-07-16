@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="management_view_form">
+            <field name="name">sac.management.form</field>
+            <field name="model">sac.management</field>
+            <field name="arch" type="xml">
+                <form string="Formulario para gestion de llamados, correos y chats">
+                    <header>
+                        <field name="estado" widget="statusbar" options="{'clickable':'1'}" statusbar_visible="recibido,proceso,desarrollo,contenido,resuelto" statusbar_colors='{"proceso":"red","resuelto":"blue"}'></field>
+                    </header>
+                    <sheet>
+                        <h1><field name="name" placeholder="Motivo principal del contacto"></field></h1>                
+                        <group>
+                            <group>
+                                <field name="partner_id" position="attributes" options="{'no_quick_create':true,'no_create_edit':true,'no_create':true}"></field>
+                                <field name="url" widget="url"></field>
+                                <field name="user_id" position="attributes" options="{'no_open':true,'no_quick_create':true,'no_create_edit':true,'no_create':true}"></field>
+                            </group>
+                            <group>
+                                <field name="servicio"></field>
+                                <field name="tipo"></field>
+                                <field name="entrada"></field>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="contacto_nommbre" placeholder="Nombre del docente"></field>
+                                <field name="contacto_tel" placeholder="+56 9 9999 9999"></field>
+                            </group>
+                            <group>
+                                <field name="contacto_email" placeholder="docente@gmail.com"></field>
+                            </group>                            
+                        </group>
+                        <group>
+                            <field name="detalle"></field>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="sac_management_list">
+            <field name="name">sac.management.list</field>
+            <field name="model">sac.management</field>
+            <field name="arch" type="xml">
+                <tree string="Listado de llamados, correos y chats">
+                    <field name="create_date" string="Fecha"></field>
+                    <field name="name"></field>
+                    <field name="partner_id"></field>
+                    <field name="user_id"></field>
+                    <field name="estado"></field>
+                    <field name="tipo"></field>
+                    <field name="entrada"></field>
+                    <field name="create_uid" string="Creador" invisible="True"></field>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="sac_management_search">
+            <field name="name">sac.management.search</field>
+            <field name="model">sac.management</field>
+            <field name="arch" type="xml">
+                <search string="Búsqueda de llamados, correos y chats">
+                    <field name="name"></field>
+                    <field name="detalle"></field>
+                    <field name="url"></field>
+                </search>
+                <filter name="group_tipo" string="Por Tipo de Solicitud" icon="terp-partner" context="{'group_by':'tipo'}"/>
+                <filter name="group_entrada" string="Por Llegada de Contacto" icon="terp-partner" context="{'group_by':'entrada'}"/>
+                <filter name="group_create_date" string="Por Fecha" icon="terp-partner" context="{'group_by':'create_date'}"/>
+                <filter name="group_user_id" string="Por Responsable" icon="terp-partner" context="{'group_by':'user_id'}"/>
+                <filter name="group_create_uid" string="Por Creador" icon="terp-partner" context="{'group_by':'create_uid'}"/>
+                <filter name="group_partner_id" string="Por Colegio" icon="terp-partner" context="{'group_by':'partner_id'}"/>
+                <filter name="filter_create_date" date="create_date" string="Fecha de creación" />
+            </field>
+        </record>
+    </data>
+</odoo>
