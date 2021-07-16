@@ -11,9 +11,12 @@
                         <group>
                             <group>
                                 <field name="active"></field>
+                                <field name="level"></field>
                             </group>
                             <group>
-                                <field name="level"></field>
+                                <field name="base_price" />
+                                <field name="additional_fee"/>
+                                <field name="total_price" force_save="1" /> <!-- Como es readonly por defecto Odoo no lo va a guardar, pero nosotros tenemos que decirle que sí lo guarde, porque vamos a actualizar ese valor programáticamente. -->
                             </group>
                         </group>
                         <notebook>
