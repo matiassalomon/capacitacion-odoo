@@ -16,7 +16,6 @@
         'security/ir.model.access.csv',
         'views/space_crew_menuitems.xml',
         'views/spacecrew_views.xml',
-        'views/css_loader.xml',
     ],
     'demo': [
         'demo/spacecraft.xml',
