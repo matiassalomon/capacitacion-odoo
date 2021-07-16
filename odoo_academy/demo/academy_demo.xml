@@ -5,6 +5,9 @@
             <field name="name">ERP 101</field>
             <field name="description">Introducción a un ERP</field>
             <field name="level">begginer</field>
+            <field name="base_price">100</field>
+            <field name="additional_fee">10</field>
+            <field name="total_price">110</field>
         </record>
         <record model="academy.course" id="accounting_200">
             <field name="name">Contabilidad 200</field>
@@ -14,6 +17,9 @@
                 No sé cómo va a hacer el corte de las líneas.
             </field>
             <field name="level">intermediate</field>
+            <field name="base_price">100</field>
+            <field name="additional_fee">10</field>
+            <field name="total_price">110</field>
         </record>
         <record model="academy.course" id="website_500">
             <field name="name">Creación de sitios web 500</field>
@@ -21,10 +27,16 @@
                 Creación de páginas web.
             </field>
             <field name="level">advance</field>
+            <field name="base_price">100</field>
+            <field name="additional_fee">10</field>
+            <field name="total_price">110</field>
         </record>
         <record model="academy.course" id="website_501">
             <field name="name">Creación de sitios web 501</field>
             <field name="level">advance</field>
+            <field name="base_price">100</field>
+            <field name="additional_fee">10</field>
+            <field name="total_price">110</field>
         </record>
     </data>
 </odoo>
