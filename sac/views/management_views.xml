@@ -59,5 +59,16 @@
                 </tree>
             </field>
         </record>
+        <record model="ir.ui.view" id="sac_management_search">
+            <field name="name">sac.management.search</field>
+            <field name="model">sac.management</field>
+            <field name="arch" type="xml">
+                <search string="Búsqueda de llamados, correos y chats">
+                    <field name="name"></field>
+                    <field name="detalle"></field>
+                    <field name="url"></field>
+                </search>
+            </field>
+        </record>
     </data>
 </odoo>
