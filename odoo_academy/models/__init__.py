@@ -1,3 +1,4 @@
 # -*- coding: utf-8 -*-
 
-from . import course, clase
+from . import course
+from . import session
