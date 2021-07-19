@@ -10,7 +10,7 @@
     'website': 'https://kdoce.cl',
     'category': 'Training',
     'version': '0.1',
-    'depends': ['base'],
+    'depends': ['web'],
     'data': [
         'security/space_crew_security.xml',
         'security/ir.model.access.csv',
