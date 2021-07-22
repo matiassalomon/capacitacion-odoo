@@ -34,14 +34,6 @@ class Session(models.Model):
                             inverse='_inverse_end_date',
                             store=True)
     
-    state = fields.Selection(string="Estados",
-                            selection=[('draft', 'Borrador'),
-                                        ('open', 'Abierta'),
-                                        ('done', 'Terminada'),
-                                        ('canceled', 'Cancelada')],
-                             default='draft',
-                             required=True)
-    
     total_price = fields.Float(string='Precio total',
                               related='course_id.total_price')
     
