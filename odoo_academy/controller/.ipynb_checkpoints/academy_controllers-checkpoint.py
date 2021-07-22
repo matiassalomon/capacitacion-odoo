@@ -2,7 +2,7 @@
 
 from odoo import http
 
-Class Academy(http.Controller):
+class Academy(http.Controller):
     @http.route('/academy/', auth='public', website=True)
     def index(self, **kw):
         return 'Hello World!'
