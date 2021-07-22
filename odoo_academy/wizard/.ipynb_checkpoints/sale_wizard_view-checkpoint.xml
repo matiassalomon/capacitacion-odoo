@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="academy_sale_wizard_form_view">
+            <field name="name">academy.sale.wizard.form.view</field>
+            <field name="model">academy.sale.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Crear orden de venta para una clase">
+                    <group>
+                        <field name="session_id" />
+                        <field name="session_students_ids" invisible="1" /> <!-- tenemos que tener este campo en la vista, aunque no se vea, para poder usarlo en el dominio. -->
+                        <field name="students_ids" domain="[('id', 'in', session_students_ids)]" />
+                    </group>
+                    <footer>
+                        <button name="create_sale_orders"
+                                type="object"
+                                string="Crear"
+                                class="oe_highlight" />
+                        or
+                        <button special="cancel" string="Cancelar" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <act_window id="lunch_sale_wizard" 
+                    name="Crear orden de venta"
+                    binding_model="academy.session"
+                    res_model='academy.sale.wizard'
+                    view_mode="form"
+                    target="new" />
+    </data>
+</odoo>

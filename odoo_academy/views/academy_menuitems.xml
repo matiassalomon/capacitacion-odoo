@@ -4,7 +4,7 @@
         <record model="ir.actions.act_window" id="course_list_action">
             <field name="name">Cursos</field>
             <field name="res_model">academy.course</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,pivot</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     No hay contenido aquí hasta que no cree su primer curso.
@@ -15,7 +15,7 @@
         <record model="ir.actions.act_window" id="session_list_action">
             <field name="name">Clases</field>
             <field name="res_model">academy.session</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,calendar</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_neutral_face">
                     No hay contenido aquí hasta que no cree su primer clase.
