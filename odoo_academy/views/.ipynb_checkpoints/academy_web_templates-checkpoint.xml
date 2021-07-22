@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
-        <template id="course.wesite">
+        <template id="course.website">
             <t t-call="website.layout">
                 <t t-set="title">Academy</t>
                 <div class="oe_structure">
@@ -37,7 +37,7 @@
                 </div>
             </t>
         </template>
-        <template id="session.wesite">
+        <template id="session.website">
             <t t-call="website.layout">
                 <t t-set="title">Clase <t t-esc="session.name" /></t>
                 <div class="oe_structure">
