@@ -29,9 +29,9 @@
                                     <i t-field="session.write_date" t-field-options="{'format':'long'}" />
                                 </p>
                             </t>
-                        </t>
-                        <t t-if="not course.sessions_ids">
-                            <p>No hay clases para este curso</p>
+                            <t t-if="not course.sessions_ids">
+                                <p>No hay clases para este curso</p>
+                            </t>
                         </t>
                     </div>
                 </div>
