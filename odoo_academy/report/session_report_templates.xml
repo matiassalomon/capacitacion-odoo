@@ -17,7 +17,7 @@
                             <div class="col-auto mw-100 mb-2">
                                 <strong>Duración de la clase:</strong>
                                 <t t-if="doc.start_date">
-                                    <span t-field="doc.star_date" />
+                                    <span t-field="doc.start_date" />
                                 </t>
                                 to
                                 <t t-if="doc.end_date">
