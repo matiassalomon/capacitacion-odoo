@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import academy_controller
+from . import academy_controllers

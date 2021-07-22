@@ -12,7 +12,7 @@
     'website': 'https://kdoce.cl',
     'category': 'Training',
     'version': '0.1',
-    'depends': ['sale','website'],
+    'depends': ['sale_management','website'],
     'data': [
         'security/academy_security.xml',
         'security/ir.model.access.csv',
