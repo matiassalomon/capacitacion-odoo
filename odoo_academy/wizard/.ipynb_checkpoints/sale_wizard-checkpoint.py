@@ -14,7 +14,7 @@ class SaleWizard(models.TransientModel):
                                 required=True,
                                 default=_default_session)
     
-    session_student_ids = fields.Many2many(comodel_name="res.partner",
+    session_students_ids = fields.Many2many(comodel_name="res.partner",
                                 string="Estudiantes en el curso",
                                 related='session_id.students_ids',
                                 help='Estos son los estudiantes actualmente en la clase')
@@ -22,7 +22,7 @@ class SaleWizard(models.TransientModel):
     students_ids = fields.Many2many(comodel_name="res.partner",
                                 string="Estudiantes a generar orden de venta")
     
-    def _create_sale_orders(self):
+    def create_sale_orders(self):
         session_product_id = self.env['product.product'].search([('is_session_product', '=', True)], limit=1)
         if session_product_id:
             for student in self.students_ids:
