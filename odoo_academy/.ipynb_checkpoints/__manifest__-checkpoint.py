@@ -23,7 +23,8 @@
         'views/product_views_inherit.xml',
         'wizard/sale_wizard_view.xml',
         'report/session_report_templates.xml',
-        'views/academy_web_templates.xml'
+        'views/academy_web_templates.xml',
+        'views/js_loader.xml'
     ],
     'demo': [
         'demo/academy_demo.xml',

@@ -43,7 +43,7 @@
                 <div class="oe_structure">
                     <div class="container">
                         <h3 t-field="session.name" />
-                        <p>Última actualización
+                        <p>Última actualizacionarda
                                     <i t-field="session.write_date" t-field-options="{'format':'long'}" />
                         </p>
                         <p>Curso

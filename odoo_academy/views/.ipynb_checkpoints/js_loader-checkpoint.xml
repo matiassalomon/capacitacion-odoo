@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+         <template id="academy_assets_backend" name="Odoo Academy assets" inherit_id="web.assets_backend">
+             <xpath expr="." position="inside">
+                 <script type="text/javascript" src="/odoo_academy/static/src/js/res_partner_many2one_inherit_academy.js"></script>
+             </xpath>
+         </template>
+     </data>
+</odoo>
