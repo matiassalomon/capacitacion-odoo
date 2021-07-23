@@ -1,6 +1,8 @@
 window.console.log('Se ejecuta el script.');
 
-var PartnerField = require('web.basic_fields').PartnerField;
+var PartnerField = require('partner.autocomplete.many2one').PartnerField;
+
+window.console.log(PartnerField);
 
 var ResPartnerMany2oneInheritAcademy = PartnerField.extend({
     _renderReadonly: function () {
